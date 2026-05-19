@@ -1,0 +1,53 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+.venv/
+venv/
+env/
+dist/
+build/
+*.egg-info/
+.eggs/
+*.egg
+
+# Local config & secrets (never commit)
+config.yaml
+credentials.json
+.env
+.env.*
+!.env.example
+
+# OAuth / session tokens
+token.json
+google_token.json
+**/google_token.json
+gopro_auth.json
+**/gopro_auth.json
+
+# Cookie dumps & scratch files
+temp
+temp.*
+cookies.txt
+*.cookies
+cookie_*.txt
+
+# Runtime data
+data/
+reports/
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Cursor / local plans (optional)
+.cursor/

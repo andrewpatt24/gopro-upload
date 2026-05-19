@@ -1,0 +1,8 @@
+# Paste your browser Cookie header line here (one line).
+# From DevTools → Network → api request → Request Headers → cookie:
+#
+# _ga=...; gp_access_token=eyJ...; gp_user_id=...; ...
+#
+# Then run:
+#   python extract_gopro_cookie.py @cookies.txt
+#   eval "$(python extract_gopro_cookie.py @cookies.txt)"

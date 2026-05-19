@@ -1,0 +1,22 @@
+# Copy to config.yaml and fill in values.
+
+drive_folder_id: ""  # run: gopro-upload init-folder (do not paste a manual Drive URL)
+chunk_size_mb: 16
+db_path: data/migration.db
+reports_dir: reports
+
+# GoPro (or set GOPRO_ACCESS_TOKEN / GOPRO_USER_ID env vars)
+gopro_access_token: ""
+gopro_user_id: ""
+
+# Google OAuth (download credentials.json from Google Cloud Console)
+google_credentials_path: credentials.json
+google_token_path: ~/.config/gopro-upload/google_token.json
+# drive.file = only files/folders this app creates (recommended)
+google_scopes:
+  - https://www.googleapis.com/auth/drive.file
+
+# Transfer tuning
+max_retries: 5
+stale_transfer_minutes: 30
+per_page: 30
